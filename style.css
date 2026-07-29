@@ -429,9 +429,15 @@ header .navbar {
     transition: 0.3s ease;
   }
 
+  .hero-section {
+    min-height: auto;
+    padding-bottom: 50px;
+  }
+
   .hero-section .section-content {
     flex-direction: column-reverse;
     justify-content: center;
+    padding-top: 90px;
   }
 
   .hero-section .hero-details {
@@ -447,8 +453,8 @@ header .navbar {
   }
 
   .hero-section .hero-image-wrapper {
-    max-width: 270px;
-    margin: 20px 0 32px;
+    max-width: 250px;
+    margin: 40px 0 20px;
   }
 
   .hero-section .hero-image-wrapper .hero-image {
