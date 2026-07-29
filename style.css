@@ -175,6 +175,7 @@ header .navbar {
   min-height: 100vh;
   color: var(--text-color);
   justify-content: space-between;
+  overflow: hidden;
 }
 .hero-section .hero-details {
   display: flex;
@@ -207,8 +208,8 @@ header .navbar {
   margin-left: 50px;
 }
 .hero-section .hero-image-wrapper .hero-image {
-  width: 400px;
-  height: 400px;
+  width: min(70vw, 400px);
+  height: min(70vw, 400px);
   border-radius: var(--border-size-circle);
   overflow: hidden;
   border: 15px solid var(--border-color);
@@ -500,6 +501,20 @@ header .navbar {
 /* Responsive media query code for max width 640px */
 
 @media screen and (max-width: 640px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+
+  .hero-section .hero-details .subtitle {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-section .hero-details .intro {
+    max-width: 350px;
+    text-align: center;
+    word-wrap: break-word;
+  }
   .hero-section .nav-buttons {
     flex-direction: column;
     width: 100%;
