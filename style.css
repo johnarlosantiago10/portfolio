@@ -444,6 +444,7 @@ header .navbar {
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .hero-section .hero-details .intro {
@@ -529,10 +530,11 @@ header .navbar {
     line-height: 1.2;
     width: 100%;
     overflow-wrap: break-word;
+    text-align: center;
   }
 
   .hero-section .hero-details .title {
-    font-size: 1rem;
+    font-size: var(--font-size-large);
   }
   .hero-section .hero-image-wrapper {
     max-width: 220px;
